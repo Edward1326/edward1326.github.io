@@ -2,49 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Edward Quianzon | Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edward Quianzon — Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container fade-in">
-      <h1 class="page-title gradient-text">Get In Touch</h1>
-      <div class="grid" style="align-items: start">
-        <div class="glass-panel">
-          <h2 style="margin-bottom: 20px">Contact Information</h2>
-          <p style="margin-bottom: 15px">
-            <strong>Email:</strong> <br /><a
-              href="mailto:edward.quianzon.r@gmail.com"
-              style="color: var(--secondary); text-decoration: none"
-              >edward.quianzon.r@gmail.com</a
-            >
-          </p>
-          <p style="margin-bottom: 15px">
-            <strong>GitHub:</strong> <br /><a
-              href="https://github.com/Edward1326"
-              target="_blank"
-              style="color: var(--secondary); text-decoration: none"
-              >github.com/Edward1326</a
-            >
-          </p>
-          <p>
-            <strong>Phone:</strong> <br /><span style="color: var(--text-muted)"
-              >+63 968 722 4933</span
-            >
-          </p>
-        </div>
+    <script src="script.js"></script>
 
-        <div class="glass-panel">
-          <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn primary" style="width: 100%">
-              Send Message
+    <div class="page-wrap">
+      <div class="container">
+        <div class="section-eyebrow fade-up">Say hello</div>
+        <h1 class="page-title fade-up">Get In <em>Touch.</em></h1>
+
+        <div class="contact-grid fade-up">
+          <!-- Info -->
+          <div>
+            <p
+              style="
+                font-size: 1rem;
+                color: var(--muted);
+                margin-bottom: 32px;
+                line-height: 1.8;
+                font-weight: 300;
+              "
+            >
+              I'm always open to new opportunities, collaborations, or just a
+              good tech conversation. Drop me a line — I usually respond within
+              24 hours.
+            </p>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">
+                  <a href="mailto:edward.quianzon.r@gmail.com"
+                    >edward.quianzon.r@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">🐙</div>
+              <div>
+                <div class="contact-info-label">GitHub</div>
+                <div class="contact-info-value">
+                  <a href="https://github.com/Edward1326" target="_blank"
+                    >github.com/Edward1326</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value">+63 968 722 4933</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="card" style="padding: 36px">
+            <h3 style="margin-bottom: 24px; font-size: 1.15rem">
+              Send a message
+            </h3>
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" placeholder="Juan dela Cruz" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" placeholder="juan@example.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea rows="5" placeholder="What's on your mind?"></textarea>
+            </div>
+            <button
+              class="btn btn-primary"
+              style="width: 100%; justify-content: center"
+            >
+              Send Message →
             </button>
-          </form>
+          </div>
         </div>
       </div>
+
+      <footer>
+        <div class="footer-logo">EQ.</div>
+        <span>&copy; 2026 Edward Anthony Rivas Quianzon</span>
+      </footer>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>

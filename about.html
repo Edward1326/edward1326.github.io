@@ -2,40 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Edward Quianzon | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edward Quianzon — About</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container fade-in">
-      <h1 class="page-title gradient-text">About Me</h1>
-      <div
-        class="glass-panel"
-        style="
-          max-width: 800px;
-          margin: 0 auto;
-          text-align: center;
-          font-size: 1.1rem;
-        "
-      >
-        <p style="margin-bottom: 20px">
-          I am a BS Information Technology student with a deep passion for
-          full-stack development, mobile applications, and system design.
-        </p>
-        <p>
-          My core focus lies in engineering scalable, secure, and user-centered
-          applications that solve real-world problems. Whether it's architecting
-          backend databases, implementing heavy encryption standards, or
-          crafting intuitive frontend interfaces, I thrive on turning complex
-          requirements into elegant digital solutions.
-        </p>
-      </div>
-    </div>
-
-    <footer>&copy; 2026 Edward Anthony Rivas Quianzon.</footer>
     <script src="script.js"></script>
+
+    <div class="page-wrap">
+      <div class="container">
+        <div class="section-eyebrow fade-up">Who I am</div>
+        <h1 class="page-title fade-up">About <em>Me.</em></h1>
+
+        <div class="about-grid fade-up">
+          <!-- Left: Image -->
+          <div class="about-img-col">
+            <div class="about-img-frame">
+              <img src="/images/image.png" alt="Edward Quianzon" />
+            </div>
+          </div>
+
+          <!-- Right: Text -->
+          <div class="about-content">
+            <p class="about-text">
+              I'm a <strong>BS Information Technology student</strong> at Ateneo
+              de Davao University with a deep passion for building things that
+              live on the internet — and beyond it.
+            </p>
+            <p class="about-text">
+              My core focus lies in engineering
+              <strong>scalable, secure, and user-centered applications</strong>
+              that solve real-world problems. Whether it's architecting backend
+              databases, implementing heavy encryption standards, or crafting
+              intuitive frontend interfaces, I thrive on turning complex
+              requirements into elegant digital solutions.
+            </p>
+            <p class="about-text">
+              I believe great software is a conversation between engineering
+              rigor and human empathy. I don't just build features — I build
+              experiences.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 16px">
+              <div>
+                <div class="section-eyebrow" style="margin-bottom: 8px">
+                  Based in
+                </div>
+                <p style="font-weight: 500; color: var(--ink)">
+                  Davao City, Philippines
+                </p>
+              </div>
+              <div>
+                <div class="section-eyebrow" style="margin-bottom: 8px">
+                  Focus
+                </div>
+                <p style="font-weight: 500; color: var(--ink)">
+                  Full-Stack & Mobile Dev
+                </p>
+              </div>
+              <div>
+                <div class="section-eyebrow" style="margin-bottom: 8px">
+                  Email
+                </div>
+                <p
+                  style="font-weight: 500; color: var(--ink); font-size: 0.9rem"
+                >
+                  edward.quianzon.r@gmail.com
+                </p>
+              </div>
+              <div>
+                <div class="section-eyebrow" style="margin-bottom: 8px">
+                  GitHub
+                </div>
+                <p style="font-weight: 500; color: var(--ink)">
+                  github.com/Edward1326
+                </p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <a href="contact.html" class="btn btn-primary"
+              >Let's work together →</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-logo">EQ.</div>
+        <span>&copy; 2026 Edward Anthony Rivas Quianzon</span>
+      </footer>
+    </div>
   </body>
 </html>

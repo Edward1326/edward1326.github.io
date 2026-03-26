@@ -1,33 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Scroll reveal animation
-  const reveals = document.querySelectorAll(".reveal");
+// Inject nav on all pages
+function buildNav() {
+  const pages = [
+    { href: "index.html", label: "Home" },
+    { href: "about.html", label: "About" },
+    { href: "skills.html", label: "Skills" },
+    { href: "projects.html", label: "Projects" },
+    { href: "education.html", label: "Education" },
+    { href: "contact.html", label: "Contact" },
+  ];
 
-  function reveal() {
-    const windowHeight = window.innerHeight;
-    const elementVisible = 150; // Reveal point
+  const current = window.location.pathname.split("/").pop() || "index.html";
 
-    reveals.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
-      if (elementTop < windowHeight - elementVisible) {
-        element.classList.add("active");
-      }
-    });
-  }
+  const nav = document.createElement("nav");
+  nav.innerHTML = `
+    <div class="nav-inner">
+      <a href="index.html" class="logo">EQ<span></span></a>
+      <ul class="nav-links">
+        ${pages
+          .map(
+            (p) => `
+          <li><a href="${p.href}" class="${current === p.href || (current === "" && p.href === "index.html") ? "active" : ""}">${p.label}</a></li>
+        `,
+          )
+          .join("")}
+      </ul>
+    </div>
+  `;
 
-  // Run once on load
-  reveal();
+  document.body.prepend(nav);
+}
 
-  // Run on scroll
-  window.addEventListener("scroll", reveal);
-
-  // Optional: Handle form submission prevention for demo purposes
-  const contactForm = document.querySelector(".contact-form");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert(
-        "Thanks for reaching out! (Form logic to be connected to a backend).",
-      );
-    });
-  }
-});
+buildNav();

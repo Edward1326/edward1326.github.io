@@ -2,72 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Edward Quianzon | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edward Quianzon — Projects</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container fade-in">
-      <h1 class="page-title gradient-text">Featured Work</h1>
-      <div class="grid">
-        <div class="card">
-          <img src="/images/wings.png" alt="Wings on Wheels" class="card-img" />
-          <h3 style="margin-bottom: 10px">Wings on Wheels (2024)</h3>
-          <p
-            style="
-              color: var(--text-muted);
-              font-size: 0.9rem;
-              margin-bottom: 15px;
-            "
-          >
-            A full-stack food truck management system with ordering, inventory,
-            POS, booking, and employee modules.
-          </p>
-          <div>
-            <span class="tech-pill">Django</span
-            ><span class="tech-pill">PostgreSQL</span
-            ><span class="tech-pill">Flutter</span>
+    <script src="script.js"></script>
+
+    <div class="page-wrap">
+      <div class="container">
+        <div class="section-eyebrow fade-up">What I've built</div>
+        <h1 class="page-title fade-up">Featured <em>Work.</em></h1>
+
+        <div class="grid fade-up">
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="/images/wings.png" alt="Wings on Wheels" />
+              <span class="project-year">2024</span>
+            </div>
+            <div class="project-body">
+              <h3>Wings on Wheels</h3>
+              <p>
+                A full-stack food truck management system with ordering,
+                inventory, POS, booking, and employee modules.
+              </p>
+              <div class="tech-pills">
+                <span class="tech-pill">Django</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Flutter</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="/images/health.png" alt="Health Share" class="card-img" />
-          <h3 style="margin-bottom: 10px">Health Share (2025)</h3>
-          <p
-            style="
-              color: var(--text-muted);
-              font-size: 0.9rem;
-              margin-bottom: 15px;
-            "
-          >
-            Decentralized mobile app for secure medical record management using
-            AES-256 encryption and IPFS storage.
-          </p>
-          <div>
-            <span class="tech-pill">Django</span
-            ><span class="tech-pill">Flutter</span
-            ><span class="tech-pill">Blockchain</span>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="/images/health.png" alt="Health Share" />
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-body">
+              <h3>Health Share</h3>
+              <p>
+                Decentralized mobile app for secure medical record management
+                using AES-256 encryption and IPFS storage.
+              </p>
+              <div class="tech-pills">
+                <span class="tech-pill">Django</span>
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">Blockchain</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="/images/ManPro.png" alt="ManPro Payroll" class="card-img" />
-          <h3 style="margin-bottom: 10px">ManPro Payroll HRMS (2026)</h3>
-          <p
-            style="
-              color: var(--text-muted);
-              font-size: 0.9rem;
-              margin-bottom: 15px;
-            "
-          >
-            An AI-driven HR Management System focused on human-centered
-            decision-making and workforce optimization.
-          </p>
-          <div>
-            <span class="tech-pill">React</span
-            ><span class="tech-pill">Laravel</span
-            ><span class="tech-pill">PHP</span>
+
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="/images/ManPro.png" alt="ManPro Payroll" />
+              <span class="project-year">2026</span>
+            </div>
+            <div class="project-body">
+              <h3>ManPro Payroll HRMS</h3>
+              <p>
+                An AI-driven HR Management System focused on human-centered
+                decision-making and workforce optimization.
+              </p>
+              <div class="tech-pills">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Laravel</span>
+                <span class="tech-pill">PHP</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <footer>
+        <div class="footer-logo">EQ.</div>
+        <span>&copy; 2026 Edward Anthony Rivas Quianzon</span>
+      </footer>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>

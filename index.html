@@ -3,53 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edward Quianzon | Home</title>
+    <title>Edward Quianzon — Developer</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-content">
-        <div class="logo gradient-text">EQ.</div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container fade-in">
-      <div class="hero-wrapper">
-        <img src="/images/image.png" alt="Edward" class="profile-img" />
-        <h1 class="page-title">Edward Anthony Rivas Quianzon</h1>
-        <h2
-          class="gradient-text"
-          style="font-size: 1.5rem; margin-bottom: 15px"
-        >
-          Full-Stack Web & Software Developer
-        </h2>
-        <p style="color: var(--text-muted); margin-bottom: 30px">
-          📍 Davao City, Philippines
-        </p>
-        <p style="font-size: 1.2rem; max-width: 600px; margin-bottom: 40px">
-          "Building scalable systems, secure applications, and modern digital
-          experiences."
-        </p>
-        <div style="display: flex; gap: 15px">
-          <a href="projects.html" class="btn primary">View Projects</a>
-          <a href="contact.html" class="btn secondary">Contact Me</a>
-        </div>
-      </div>
-    </div>
-
-    <footer>&copy; 2026 Edward Anthony Rivas Quianzon.</footer>
     <script src="script.js"></script>
+
+    <div class="page-wrap">
+      <section class="hero-section fade-up">
+        <!-- LEFT -->
+        <div class="hero-left">
+          <div class="hero-badge">Available for work</div>
+          <h1 class="hero-name">
+            Edward<br />
+            <span class="outline">Anthony</span><br />
+            Quianzon
+          </h1>
+          <p class="hero-tagline">
+            Full-stack developer crafting scalable systems, secure applications,
+            and modern digital experiences.
+          </p>
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Davao City, Philippines
+            </div>
+            <div class="hero-meta-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              BS Information Technology
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="projects.html" class="btn btn-primary">View Projects →</a>
+            <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-right">
+          <div class="hero-img-wrap">
+            <div class="hero-img-bg"></div>
+            <img
+              src="/images/image.png"
+              alt="Edward Quianzon"
+              class="profile-img"
+            />
+
+            <div class="hero-stat-card top-left">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Years of dev</div>
+            </div>
+
+            <div class="hero-stat-card bottom-right">
+              <div class="stat-num">8+</div>
+              <div class="stat-label">Tech stacks</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-logo">EQ.</div>
+        <span>&copy; 2026 Edward Anthony Rivas Quianzon</span>
+      </footer>
+    </div>
   </body>
 </html>
