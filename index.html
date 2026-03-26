@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edward Anthony Rivas Quianzon | Portfolio</title>
+    <title>Edward Quianzon | Home</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -11,212 +11,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="navbar">
+    <nav>
       <div class="nav-content">
-        <div class="logo">EQ.</div>
+        <div class="logo gradient-text">EQ.</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <header id="home" class="section hero">
-      <div class="hero-content reveal">
-        <img
-          src="/images/image.png"
-          alt="Edward Anthony Rivas Quianzon"
-          class="profile-img"
-        />
-        <h1>Edward Anthony Rivas Quianzon</h1>
-        <h2>Full-Stack Web Developer & Software Developer</h2>
-        <p class="location">📍 Davao City, Philippines</p>
-        <p class="tagline">
+    <div class="container fade-in">
+      <div class="hero-wrapper">
+        <img src="/images/image.png" alt="Edward" class="profile-img" />
+        <h1 class="page-title">Edward Anthony Rivas Quianzon</h1>
+        <h2
+          class="gradient-text"
+          style="font-size: 1.5rem; margin-bottom: 15px"
+        >
+          Full-Stack Web & Software Developer
+        </h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px">
+          📍 Davao City, Philippines
+        </p>
+        <p style="font-size: 1.2rem; max-width: 600px; margin-bottom: 40px">
           "Building scalable systems, secure applications, and modern digital
           experiences."
         </p>
-        <div class="cta-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+        <div style="display: flex; gap: 15px">
+          <a href="projects.html" class="btn primary">View Projects</a>
+          <a href="contact.html" class="btn secondary">Contact Me</a>
         </div>
       </div>
-    </header>
+    </div>
 
-    <section id="about" class="section bg-alt">
-      <div class="container reveal">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-text">
-          <p>
-            I am a BS Information Technology student with a deep passion for
-            full-stack development, mobile applications, and system design. My
-            core focus lies in engineering scalable, secure, and user-centered
-            applications that solve real-world problems. Whether it's
-            architecting backend databases or crafting intuitive frontend
-            interfaces, I thrive on turning complex requirements into elegant
-            digital solutions.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container reveal">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Backend</h3>
-            <ul>
-              <li>Django / Python</li>
-              <li>REST API</li>
-              <li>PostgreSQL / MySQL</li>
-              <li>PHP / Laravel</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h3>Frontend</h3>
-            <ul>
-              <li>HTML, CSS, JavaScript</li>
-              <li>React</li>
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h3>Mobile</h3>
-            <ul>
-              <li>Flutter / Dart</li>
-              <li>Cross-platform Development</li>
-              <li>UI/UX Design</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h3>Workflow</h3>
-            <ul>
-              <li>Git Version Control</li>
-              <li>Agile Development</li>
-              <li>Problem Solving</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section bg-alt">
-      <div class="container reveal">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-img-container">
-              <img src="/images/wings.png" alt="Wings on Wheels" />
-            </div>
-            <div class="project-info">
-              <h3>Wings on Wheels (2024)</h3>
-              <p>
-                A full-stack food truck management system with ordering,
-                inventory, POS, booking, and employee modules.
-              </p>
-              <div class="tech-stack">
-                <span>Django</span><span>PostgreSQL</span><span>REST API</span
-                ><span>Flutter</span>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img-container">
-              <img src="/images/health.png" alt="Health Share" />
-            </div>
-            <div class="project-info">
-              <h3>Health Share (2025)</h3>
-              <p>
-                A decentralized mobile app for secure medical record management
-                using AES-256 encryption, RSA cryptography, and IPFS storage.
-              </p>
-              <div class="tech-stack">
-                <span>Django</span><span>Flutter</span
-                ><span>Hive Blockchain</span><span>AES/RSA</span>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-img-container">
-              <img src="/images/ManPro.png" alt="ManPro Payroll HRMS" />
-            </div>
-            <div class="project-info">
-              <h3>ManPro Payroll HRMS (2026)</h3>
-              <p>
-                An AI-driven HR Management System focused on human-centered
-                decision-making and workforce optimization.
-              </p>
-              <div class="tech-stack">
-                <span>React</span><span>Laravel</span><span>PHP</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container reveal">
-        <h2 class="section-title">Education</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="year">2019 – Present</div>
-            <h3>BS Information Technology</h3>
-            <h4>Ateneo de Davao University</h4>
-          </div>
-          <div class="timeline-item">
-            <div class="year">2017 – 2019</div>
-            <h3>Senior High School</h3>
-            <h4>Ateneo de Davao University Senior High School Unit</h4>
-          </div>
-          <div class="timeline-item">
-            <div class="year">2007 – 2017</div>
-            <h3>Primary & Junior High</h3>
-            <h4>General Santos Hope Christian School</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section bg-alt">
-      <div class="container reveal">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-wrapper">
-          <div class="contact-info">
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:edward.quianzon.r@gmail.com"
-                >edward.quianzon.r@gmail.com</a
-              >
-            </p>
-            <p>
-              <strong>GitHub:</strong>
-              <a href="https://github.com/Edward1326" target="_blank"
-                >github.com/Edward1326</a
-              >
-            </p>
-            <p><strong>Phone:</strong> +63 968 722 4933</p>
-          </div>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn primary">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2026 Edward Anthony Rivas Quianzon. All rights reserved.</p>
-    </footer>
-
+    <footer>&copy; 2026 Edward Anthony Rivas Quianzon.</footer>
     <script src="script.js"></script>
   </body>
 </html>
